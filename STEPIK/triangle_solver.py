@@ -29,22 +29,28 @@ b_y = float(input("Input y value for point B: "))
 c_x = float(input("Input x value for point C: "))
 c_y = float(input("Input y value for point C: "))
 
+
 a_len = compute_len(b_x, c_x, b_y, c_y)
 b_len = compute_len(a_x, c_x, a_y, c_y)
 c_len = compute_len(b_x, a_x, b_y, a_y)
 
-per = compute_perimetr(a_len, b_len, c_len)
 
-square = compute_area(per, a_len, b_len, c_len)
+if : a_len + b_len <= c_len or b_len + b_len <= a_len or a_len + c_len <= b_len:
+    print("This is not a triangle!")
+else:
 
-a_angle = compute_angle(a_len, b_len, c_len)
-b_angle = compute_angle(b_len, c_len, a_len)
-c_angle = compute_angle(c_len, a_len, b_len)
+    per = compute_perimetr(a_len, b_len, c_len)
+
+    square = compute_area(per, a_len, b_len, c_len)
+
+    a_angle = compute_angle(a_len, b_len, c_len)
+    b_angle = compute_angle(b_len, c_len, a_len)
+    c_angle = compute_angle(c_len, a_len, b_len)
 
 
-print("Lenghts of triangle`s sides = ", round(
-    a_len, 3), round(b_len, 3), round(c_len, 3))
-print("Square of triangle = ", round(square, 3))
-print("Perimetr of triangle = ", round(per, 3))
-print("Angles are : {}, {}, {}".format(
-    round(a_angle, 3), round(b_angle, 3), round(c_angle, 3)))
+    print("Lenghts of triangle`s sides = ", round(
+        a_len, 3), round(b_len, 3), round(c_len, 3))
+    print("Square of triangle = ", round(square, 3))
+    print("Perimetr of triangle = ", round(per, 3))
+    print("Angles are : {}, {}, {}".format(
+        round(a_angle, 3), round(b_angle, 3), round(c_angle, 3)))
