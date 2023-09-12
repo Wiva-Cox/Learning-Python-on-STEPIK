@@ -22,6 +22,18 @@ def compute_angle(a, b, c):
     return degrees(angle)
 
 
+def compute_circumcircle():
+    pass
+
+
+def compute_incircle():
+    pass
+
+
+def median_len():
+    pass
+
+
 a_x = float(input("Input x value for point A: "))
 a_y = float(input("Input y value for point A: "))
 b_x = float(input("Input x value for point B: "))
