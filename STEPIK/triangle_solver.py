@@ -22,16 +22,20 @@ def compute_angle(a, b, c):
     return degrees(angle)
 
 
-def compute_circumcircle():
-    pass
+def compute_circumcircle(s, a, b, c):
+    out_r = a*b*c/4/s
+    return out_r
 
 
-def compute_incircle():
-    pass
+def compute_incircle(p, a, b, c):
+    p_half = p * 0.5
+    inc_r = sqrt((p_half-a)*(p_half-b)*(p_half-c) / p_half)
+    return inc_r
 
 
-def median_len():
-    pass
+def median_len(a, b, c):
+    med = 0.5 * sqrt(2 * (a**2 + b**2) - a**2)
+    return med
 
 
 a_x = float(input("Input x value for point A: "))
